@@ -24,11 +24,11 @@ void main ()
 	char choice ;							// declaration of choice
 
 	printf ("Enter circle radius: \r\n");	// user to supply the radius
-	scanf ("%f\n", &radius);
+	scanf ("%f", &radius);
 	fflush(stdin);							// clear the stdin and stdout buffer
 	fflush(stdout);
 
-	printf ("Enter your choise \n ");		// ask for user selection
+	printf ("Enter your choise \r\n ");		// ask for user selection
 	scanf ("%c", &choice);
 	fflush(stdin);							// clear the stdin and stdout buffer
 	fflush(stdout);
@@ -39,7 +39,7 @@ void main ()
 	case 'A':
 	{
 		area = 3.14 * radius * radius ;
-		printf ("Area of circle is: %f \n", area) ;							// print the area
+		printf ("Area of circle is: %f \r\n", area) ;							// print the area
 	}
 	break ;									// end of the first case
 
@@ -52,7 +52,7 @@ void main ()
 	break;									// end of the 2nd case
 
 	default:
-		printf ("Wrong choice was entered. \n");		// Error MSG in case of wrong choice
+		printf ("Wrong choice was entered. \r\n");		// Error MSG in case of wrong choice
 		break;								// end of default case
 
 	}	// end of switch
