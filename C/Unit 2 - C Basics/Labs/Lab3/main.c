@@ -15,26 +15,29 @@
 #include <stdio.h>
 
 void main ()
-{
-	// declaration and initialization:
-	int first, second, third ;
-
-	printf ("Enter the three numbers: \r\n") ;
-	scanf ("%d %d %d", &first, &second, &third);
-
-	if (first > second)
 	{
-		if (first > third)
-			printf("The largest number is: %d", first);
-		else
-			printf("The largest number is: %d", third);
-	}
-	else
-	{
-		if (second > third)
-			printf("The largest number is: %d", second);
-		else
-			printf("The largest number is: %d", third);
+		// declaration and initialization:
+		int first, second, third ;
 
+		printf ("Enter the three numbers: \r\n") ;
+		scanf ("%d %d %d", &first, &second, &third);
+		fflush(stdin);
+		fflush(stdout);
+
+		if (first > second)
+		{
+			if (first > third)
+				printf("The largest number is: %d", first);
+			else
+				printf("The largest number is: %d", third);
+		}
+		else
+		{
+			if (second > third)
+				printf("The largest number is: %d", second);
+			else
+				printf("The largest number is: %d", third);
+
+		}
+		getchar();		// to stop program from exit
 	}
-}
