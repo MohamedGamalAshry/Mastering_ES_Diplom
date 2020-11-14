@@ -53,6 +53,7 @@ void main ()
 
 	default:
 		printf ("Wrong choice was entered. \n");		// Error MSG in case of wrong choice
+		break;								// end of default case
 
 	}	// end of switch
 
