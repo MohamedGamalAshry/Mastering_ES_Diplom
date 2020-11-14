@@ -47,17 +47,17 @@ void main ()
 	case 'C':
 	{
 		Circumference = 2 * 3.14 * radius ;
-		printf ("The Circumference of the circle is: %f", Circumference);	// print the circumference
+		printf ("The Circumference of the circle is: %f", Circumference);		// print the circumference
 	}
-	break;									// end of the 2nd case
+	break;												// end of the 2nd case
 
 	default:
 		printf ("Wrong choice was entered. \r\n");		// Error MSG in case of wrong choice
-		break;								// end of default case
+		break;											// end of default case
 
-	}	// end of switch
+	}				// end of switch
 
 	getchar();
-}		// end of main
+}					// end of main
 
 
