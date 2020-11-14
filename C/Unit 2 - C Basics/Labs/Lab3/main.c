@@ -19,25 +19,25 @@ void main ()
 		// declaration and initialization:
 		int first, second, third ;
 
-		printf ("Enter the three numbers: \r\n") ;
-		scanf ("%d %d %d", &first, &second, &third);
+		printf ("Enter the three numbers: \r\n") ;				// User to enter the three numbers
+		scanf ("%d %d %d", &first, &second, &third);			// scan the three numbers from user
 		fflush(stdin);
 		fflush(stdout);
 
-		if (first > second)
+		if (first > second)										// compare between first and second numbers
 		{
-			if (first > third)
-				printf("The largest number is: %d", first);
+			if (first > third)									// compare between first and third numbers
+				printf("The largest number is: %d", first);     // print the largest number
 			else
-				printf("The largest number is: %d", third);
+				printf("The largest number is: %d", third);     // print the largest number
 		}
 		else
 		{
-			if (second > third)
-				printf("The largest number is: %d", second);
+			if (second > third)									// compare between second and third numbers
+				printf("The largest number is: %d", second);	// print the largest number
 			else
-				printf("The largest number is: %d", third);
+				printf("The largest number is: %d", third);		// print the largest number
 
-		}
+		}				// end of if
 		getchar();		// to stop program from exit
-	}
+	}					// end of main
