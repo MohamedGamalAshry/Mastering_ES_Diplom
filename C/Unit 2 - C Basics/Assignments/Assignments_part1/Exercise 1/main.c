@@ -10,7 +10,6 @@
 #include <stdio.h>
 int main()
 {
-    int num;
     printf("C Programming");
     return 0;
 }
