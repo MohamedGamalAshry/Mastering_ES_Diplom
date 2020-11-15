@@ -23,12 +23,12 @@ int main()
 	scanf("%f", &Second);							// store the second value
 	fflush(stdin);	fflush(stdout);
 
-	printf("Before swap First=%d Second=%d", First, Second);
+	printf("Before swap First=%f Second=%f", First, Second);
 	fflush(stdout);
 	First  = First + Second;
 	Second = First - Second;
 	First  = First - Second;
 
-	printf("\nAfter swap First=%d Second=%d", First, Second);
+	printf("\nAfter swap First=%f Second=%f", First, Second);
 	return 0;
 }
