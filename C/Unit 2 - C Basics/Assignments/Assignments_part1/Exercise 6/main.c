@@ -26,7 +26,7 @@ int main()
       Second = temp;    							// Value of temp = First, will be stored in variable second variable
 
       // print the result after swapping on the screen
-      printf("\nAfter swapping, First value = %.2f\n", First);
-      printf("After swapping, second value = %.2f", Second);
+      printf("\nAfter swapping, First value = %.2f", First);
+      printf("\nAfter swapping, second value = %.2f", Second);
       return 0;
 }	//end of main
