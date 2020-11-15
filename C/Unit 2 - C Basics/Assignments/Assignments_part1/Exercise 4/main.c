@@ -11,8 +11,7 @@
 #include <stdio.h>
 int main( )
 {
-    //declaration of variables
-	float number_1, number_2, Result;
+	float number_1, number_2, Result;				//declaration of variables
 
     printf("Enter two numbers: ");					// ask user to enter the numbers
     scanf("%f %f",&number_1,&number_2);        		// Store the two floating point numbers entered by use
@@ -21,4 +20,4 @@ int main( )
     Result = number_1*number_2;  					// calculate the result of  multiplication
     printf("Product: %f",Result);
     return 0;
-}
+}		// end of main
