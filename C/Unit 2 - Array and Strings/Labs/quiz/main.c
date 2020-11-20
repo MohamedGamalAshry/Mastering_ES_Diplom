@@ -28,7 +28,7 @@ int main ()
 	{
 		if (x[i] > x[i-1] && x[i] > x[i+1] )
 		{
-			printf(" The array element No. %d fulfill the condition\r\n", x[i]);
+			printf(" The array element No. %d fulfill the condition: x[i-1]=%d x[i]=%d x[i+1]=%d \r\n", i,x[i-1],x[i],x[i+1]);
 			count+= 1;
 		}
 	}
