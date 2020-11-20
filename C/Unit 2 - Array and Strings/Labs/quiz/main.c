@@ -28,11 +28,11 @@ int main ()
 	{
 		if (x[i] > x[i-1] && x[i] > x[i+1] )
 		{
-			printf(" The array element No. %d fulfill the condition", x[i]);
+			printf(" The array element No. %d fulfill the condition\r\n", x[i]);
 			count+= 1;
 		}
 	}
-	printf(" The total array elements that fulfill the condition is: %d", count);
+	printf(" The total array elements that fulfill the condition is: %d\r\n", count);
 
 }
 
