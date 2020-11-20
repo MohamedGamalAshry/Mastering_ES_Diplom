@@ -25,6 +25,7 @@ int main ()
 	printf("\r\nNo. of cols is:");
 	scanf("%d", &col);
 
+	// Reading the elements of matrix from the user
 	printf("\r\nEnter the elements of the matrix:\r\n");
 	for (int i=0 ; i<row ; i++)
 	{
@@ -37,7 +38,7 @@ int main ()
 	}
 
 	//---------------------------------------------------
-
+	// printing the matrix
 	printf("The entered matrix:\r\n");
 	for (int i=0 ; i<row ; i++)
 	{
@@ -49,27 +50,27 @@ int main ()
 	}
 
 	//---------------------------------------------------
-
+	// creating the transpose of the matrix
 	for (int i=0 ; i<row ; i++)
 	{
 		for (int j=0 ; j<col ; j++)
 		{
-			transpose[i][j] = matrix[i][j];
+			transpose[i][j] = matrix[i][j];		// reverse the indexing to transpose the matrix
 		}
 
 	}
 
-	printf("The Transpose of the matrix is:\r\n");
+	printf("The Transpose of the matrix is:\r\n");	// printing the transpose
 
 	for (int i=0 ; i<col ; i++)
 	{
 		for (int j=0 ; j<row ; j++)
 		{
-			printf("%.1f ",transpose[j][i]);
+			printf("%.1f ",transpose[j][i]);	// print each element in the transpose matrix
 		}
 		printf("\r\n");
 	}
 
-	//return 0;
-}
+	return 0;
+}		// end of main
 
