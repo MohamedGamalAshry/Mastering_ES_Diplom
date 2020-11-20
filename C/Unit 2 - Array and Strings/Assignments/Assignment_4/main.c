@@ -32,7 +32,7 @@ int main ()
 
 	for(i=0 ; i<num+1 ; i++)
 	{
-		if (i=location)				// inserting the element in the location
+		if (i==location)				// inserting the element in the location
 			{
 			temp [i] = element ;
 			i++ ;
