@@ -16,7 +16,7 @@ int main ()
 	int num, element, location, Array[30], temp[30], i;
 
 	printf("\r\nEnter the No. of elements: ");	// ask the user to enter the No. of element
-	scanf("%d",num);
+	scanf("%d",&num);
 
 	for(i=0 ; i<num ; i++)						// filling the array from 1 to num
 	{
@@ -25,10 +25,10 @@ int main ()
 	}
 
 	printf("\r\nEnter the element to be inserted: ");	// Ask the user to enter the element
-	scanf("%d",element);
+	scanf("%d",&element);
 
 	printf("\r\nEnter the location of the element: ");	// Ask the user to enter the location
-	scanf("%d",location);
+	scanf("%d",&location);
 
 	for(i=0 ; i<num+1 ; i++)
 	{
