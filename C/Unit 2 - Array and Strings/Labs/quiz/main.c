@@ -32,7 +32,7 @@ int main ()
 			count+= 1;
 		}
 	}
-	printf(" The total array elements that fulfill the condition is:", count);
+	printf(" The total array elements that fulfill the condition is: %d", count);
 
 }
 
