@@ -18,7 +18,7 @@ void main ()
 
 	for (i=0; i<5 ; i++)
 	{
-		y = 5*x*x+3*x+2;
+		y = 5*x[i]*x[i]+3*x[i]+2;
 		printf("y(%f)=%f\r\n",x,y);
 	}
 
