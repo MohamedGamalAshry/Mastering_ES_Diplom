@@ -32,7 +32,7 @@ int main()
 	{
 		for (j=0 ; j<3 ; j++)
 		{
-			printf("%.2f ", matrix[i][j]);		// print the matix elements each iteration
+			printf("%.2f ", matrix[i][j]);		// print the matrix elements each iteration
 			fflush(stdin) ; fflush(stdout);
 
 		}	//end of for loop
@@ -54,7 +54,7 @@ int main()
 	{
 		for (j=0 ; j<3 ; j++)
 		{
-			printf("%.2f ", transpose[i][j]);	// print the tranpose matrix
+			printf("%.2f ", transpose[i][j]);	// print the transpose matrix
 
 		}	//end of for loop
 		printf("\r\n");
