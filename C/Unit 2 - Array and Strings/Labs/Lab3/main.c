@@ -32,8 +32,30 @@ int main()
 		for (j=0 ; j<3 ; j++)
 		{
 			printf("%.2f ", matrix[i][j]);
+			fflush(stdin) ; fflush(stdout);
 
 		}
 		printf("\r\n");
 	}
+
+	//convert the matrix to its transpose:
+	for (i=0 ; i<3 ; i++)
+	{
+		for (j=0 ; j<3 ; j++)
+		{
+			transpose [i][j] = matrix [j][i] ;
+		}
+	}
+	// printing the matrix
+	printf("The transpose of the matrix is:\r\n");
+	for (i=0 ; i<3 ; i++)
+	{
+		for (j=0 ; j<3 ; j++)
+		{
+			printf("%.2f ", transpose[i][j]);
+
+		}
+		printf("\r\n");
+	}
+
 }
