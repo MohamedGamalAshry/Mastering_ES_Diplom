@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-void main ()
+int main ()
 {
 	float x [5]={5,16,22,3.5,15};
 	float y;
@@ -19,7 +19,8 @@ void main ()
 	for (i=0; i<5 ; i++)
 	{
 		y = 5*x[i]*x[i]+3*x[i]+2;
-		printf("y(%f)=%f\r\n",x,y);
+		printf("y(%.2f)=%.2f\r\n",x,y);
 	}
+	return 0;
 
 }
