@@ -17,8 +17,6 @@ int main ()
 {
 	int x [1000];
 	int i , count = 0;
-	int found [];
-
 
 	for (i=0 ; i<1000 ; i++)
 	{
