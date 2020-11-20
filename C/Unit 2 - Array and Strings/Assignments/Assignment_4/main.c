@@ -13,7 +13,7 @@
 int main ()
 {
 	// Declaring all the required variables:
-	int num, element, location, Array[30], temp[30], i;
+	int num, element, location, Array[30], temp[30], i , flag =0;
 
 	printf("\r\nEnter the No. of elements: ");	// ask the user to enter the No. of element
 	scanf("%d",&num);
@@ -32,17 +32,21 @@ int main ()
 
 	for(i=0 ; i<num+1 ; i++)
 	{
-		if (i==location)				// inserting the element in the location
+		if (i+1==location)				// inserting the element in the location
 			{
 			temp [i] = element ;
-			i++ ;
+			flag =1 ;
 			continue ;
 			}
 
-		temp[i] = Array[i] ;
-		printf("%d ", temp[i]);		// printing the new array after insertion
+		temp[i] = Array[i-flag] ;
+		//printf("%d ", temp[i]);		// printing the new array after insertion
 	}
 
+    for(i=0 ; i<num+1 ; i++)
+	{
+		printf("%d ", temp[i]);		// printing the new array after insertion
+	}
 	return 0;
 
 }		// end of main
