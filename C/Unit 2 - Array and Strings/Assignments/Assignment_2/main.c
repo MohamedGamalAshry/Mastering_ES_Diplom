@@ -39,7 +39,6 @@ int main()
 	average = sum/n_numbers ;
 	printf("The Average is:%f",average);	// printing the average
 
-	getchar();
 	return 0;		// end of main
 }
 
