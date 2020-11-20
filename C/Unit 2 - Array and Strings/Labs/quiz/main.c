@@ -15,24 +15,23 @@
 
 int main ()
 {
-	int x [1000];
-	int i , count = 0;
+	int x [1000];					// initializing an array of 1000 elements
+	int i , count = 0;				// declaring the required variables
 
 	for (i=0 ; i<1000 ; i++)
 	{
-		x [i] = rand() % 1000;
-		//printf("%d \r\n", x[i])
-	}
+		x [i] = rand() % 1000;		// fill the array with random variables from 0 to 1000
+ 	}
 
 	for (i=1 ; i<999 ; i++)
 	{
-		if (x[i] > x[i-1] && x[i] > x[i+1] )
+		if (x[i] > x[i-1] && x[i] > x[i+1] )	// the required condition
 		{
-			printf(" The array element No. %d fulfill the condition: x[i-1]=%d x[i]=%d x[i+1]=%d \r\n", i,x[i-1],x[i],x[i+1]);
-			count+= 1;
+			printf(" The array element No. %d fulfill the condition as: x[i-1]=%d x[i]=%d x[i+1]=%d \r\n", i,x[i-1],x[i],x[i+1]);
+			count+= 1;							// count the founded elements
 		}
 	}
-	printf(" The total array elements that fulfill the condition is: %d\r\n", count);
+	printf(" The total array elements that fulfill the condition is: %d\r\n", count);	// print the total count of the elements
 
 }
 
