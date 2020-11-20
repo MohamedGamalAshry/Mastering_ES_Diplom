@@ -23,7 +23,7 @@ int main()
 
 	// Ask user to enter the number required for the operation
 	printf("Enter two operands: ");
-	scanf("%lf %lf", &first, &second);
+	scanf("%.2lf .2%lf", &first, &second);
 	fflush(stdin); fflush(stdout);
 
 	switch (operator)
