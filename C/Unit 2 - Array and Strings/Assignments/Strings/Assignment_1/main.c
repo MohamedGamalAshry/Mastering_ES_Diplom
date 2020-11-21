@@ -34,7 +34,7 @@ int main ()
 	{
 		if (string[i]==target)
 		{
-			count+=1 ;
+			count+=1 ;							// indicate the frequency of the character
 		}
 	}
 
@@ -44,7 +44,8 @@ int main ()
 		printf ("\r\nThe character '%c' is not in the string.", target);			// Reading and store a string from the user
 
 	return 0;
-}
+
+}	// end of main
 
 
 
