@@ -20,10 +20,13 @@ int main ()
 	int count=0, i, length ;					// define variable for the frequency
 
 	printf ("Enter a string: ");				// Reading and store a string from the user
-	scanf ("%[*\n]",&string);
+	scanf ("%[^\n]%*c",string);
+	//gets(string);
+	fflush(stdin); fflush(stdout);
 
 	printf ("\r\nEnter a specific character: ");		// Reading and store a string from the user
 	scanf ("%c",&target);
+	fflush(stdin); fflush(stdout);
 
 	length = strlen(string);					// find the string length
 
@@ -42,3 +45,6 @@ int main ()
 
 	return 0;
 }
+
+
+
