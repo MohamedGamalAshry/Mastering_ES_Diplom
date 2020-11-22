@@ -6,7 +6,7 @@
  *
  *      Description: Define 1D array of 1000 element and fill it with a random values using rand() function
  *      			 between 1 and 1000, then search and counts the number of values that satisfy the following condition:
- *      			 	the previous and the next values is lower than the center value.
+ *      			 "the previous and the next values is lower than the center value".
  */
 
 #include <stdio.h>

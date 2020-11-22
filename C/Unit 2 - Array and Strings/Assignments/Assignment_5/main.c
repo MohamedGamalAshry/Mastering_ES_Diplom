@@ -15,19 +15,21 @@ int main ()
 	int num , target, Array[100], i, location=0;
 
 	printf("Enter the No. of elements: \r\n");
-	scanf ("%d",&num);
 	fflush(stdin); fflush(stdout);
+	scanf ("%d",&num);
+
 
 	for (i=0 ; i<num ; i++)
 	{
-		scanf ("%d ",&Array[i]);
+		scanf ("%d ",Array[i]);
 		//printf("%d ",Array[i]);
 	}
 
 
 	printf("\r\nEnter the element to be searched: ");
-	scanf ("%d",&target);
 	fflush(stdin); fflush(stdout);
+	scanf ("%d",&target);
+
 
 	for (i=0 ; i<num ; i++)
 	{

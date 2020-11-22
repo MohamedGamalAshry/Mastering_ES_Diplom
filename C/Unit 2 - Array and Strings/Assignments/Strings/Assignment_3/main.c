@@ -17,8 +17,7 @@ int main ()
 	int length ;
 
 	printf("Enter a string: ");		// ask user to enter the string
-	fflush(stdin) ;
-	fflush(stdout) ;
+	fflush(stdin) ;		fflush(stdout) ;
 	scanf ("%[^\n]%*c",string);
 
 	length = strlen(string);

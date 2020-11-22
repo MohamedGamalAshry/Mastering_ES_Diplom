@@ -17,15 +17,15 @@ int main ()
 	float sum [2][2];
 	int i , j;
 
-	printf ("Enter the elements of Matrix No.1: \n") ;
-	fflush(stdin);fflush (stdout);
-	for ( i=0 ; i<2 ; i++)
+	printf ("Enter the elements of Matrix No.1: \r\n") ;
+
+ 	for ( i=0 ; i<2 ; i++)
 	{
 		for ( j=0 ; j<2 ; j++)
 		{
-			printf ("\nEnter the element %d%d: ",i+1,j+1);
+			printf ("Enter the element %d%d: ",i+1,j+1);
 			fflush(stdin);fflush (stdout);
-			scanf ("%f ", matrix1[i][j]) ;
+			scanf ("%f ", &matrix1[i][j]) ;
 		}
 	}
 
@@ -37,15 +37,15 @@ int main ()
 	{
 		for ( j=0 ; j<2 ; j++)
 		{
-			printf ("\nEnter the element %d%d: ",i+1,j+1);
+			printf ("\r\nEnter the element %d%d: ",i+1,j+1);
 			fflush(stdin);fflush (stdout);
-			scanf ("%f ", matrix2[i][j]) ;
+			scanf ("%f ", &matrix2[i][j]) ;
 		}
 	}
 
 	// ------------------------------------------------------
 
-	printf ("\nSum of Matrices: \n") ;
+	printf ("\r\nSum of Matrices: \r\n") ;
 
 	for ( i=0 ; i<2 ; i++)
 	{
@@ -54,7 +54,7 @@ int main ()
 			sum[i][j] = matrix1[i][j] + matrix2[i][j] ;
 			printf ("%.2f ", sum[i][j]);
 		}
-		printf ("\n");
+		printf ("\r\n");
 
 	}
 
