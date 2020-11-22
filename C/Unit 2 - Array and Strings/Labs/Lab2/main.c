@@ -12,11 +12,11 @@
 
 int main ()
 {
-	float x [5]={5,16,22,3.5,15};	// declaring and initialization of array
-	float y;						// declaration of the result variable
-	int i ;							// declaring the looping variable
+	float x [5]={5,16,22,3.5,15};			// declaring and initialization of array
+	float y;								// declaration of the result variable
+	int i ;									// declaring the looping variable
 
-	// looping to evaluate the polyinomial expression
+	// looping to evaluate the polynomial expression
 	for (i=0; i<5 ; i++)
 	{
 		y = 5*x[i]*x[i]+3*x[i]+2;			// evaluate the function
