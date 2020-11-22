@@ -18,11 +18,12 @@ int main ()
 
 	// looping to evaluate the polynomial expression
 	printf("Evaluation of the polynomial y=5*x^2+3*x+2, for x = {5,16,22,3.5,15} is:\r\n");
+	fflush(stdout);
 
 	for (i=0; i<5 ; i++)
 	{
 		y[i] = 5*x[i]*x[i]+3*x[i]+2;			// evaluate the function
-		printf("y(%.2f)=%.2f\r\n", x, y);		// print the result
+		printf("y(%f)=%f\r\n", x[i], y[i]);		// print the result
 	}
 	return 0;
 
