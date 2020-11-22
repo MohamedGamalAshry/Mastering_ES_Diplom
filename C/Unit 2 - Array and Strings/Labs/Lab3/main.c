@@ -26,6 +26,8 @@ int main()
 		}
 	}
 
+	//------------------------------------------------------------------------------------------
+
 	// printing the matrix
 	printf("The matrix is:\r\n");
 	for (i=0 ; i<3 ; i++)
@@ -39,6 +41,8 @@ int main()
 		printf("\r\n");							// make new line after each matrix row
 	}	//end of for loop
 
+	//------------------------------------------------------------------------------------------
+
 	//convert the matrix to its transpose:
 	for (i=0 ; i<3 ; i++)
 	{
@@ -47,6 +51,8 @@ int main()
 			transpose [i][j] = matrix [j][i] ;	// convert the matrix elements to the transpose
 		}	//end of for loop
 	}	//end of for loop
+
+	//------------------------------------------------------------------------------------------
 
 	// printing the matrix
 	printf("The transpose of the matrix is:\r\n");
