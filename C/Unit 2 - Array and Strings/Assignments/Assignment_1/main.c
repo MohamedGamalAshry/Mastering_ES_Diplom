@@ -18,13 +18,14 @@ int main ()
 	int i , j;
 
 	printf ("Enter the elements of Matrix No.1: \n") ;
-
+	fflush(stdin);fflush (stdout);
 	for ( i=0 ; i<2 ; i++)
 	{
 		for ( j=0 ; j<2 ; j++)
 		{
 			printf ("\nEnter the element %d%d: ",i+1,j+1);
-			scanf ("%f ", &matrix1[i][j]) ;
+			fflush(stdin);fflush (stdout);
+			scanf ("%f ", matrix1[i][j]) ;
 		}
 	}
 
@@ -37,7 +38,8 @@ int main ()
 		for ( j=0 ; j<2 ; j++)
 		{
 			printf ("\nEnter the element %d%d: ",i+1,j+1);
-			scanf ("%f ", &matrix2[i][j]) ;
+			fflush(stdin);fflush (stdout);
+			scanf ("%f ", matrix2[i][j]) ;
 		}
 	}
 
