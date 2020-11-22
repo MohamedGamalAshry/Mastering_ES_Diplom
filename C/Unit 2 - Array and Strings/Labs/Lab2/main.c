@@ -13,7 +13,7 @@
 int main ()
 {
 	float x [5]={5,16,22,3.5,15};			// declaring and initialization of array
-	float y;								// declaration of the result variable
+	float y[5];								// declaration of the result variable
 	int i ;									// declaring the looping variable
 
 	// looping to evaluate the polynomial expression
