@@ -23,7 +23,7 @@ int main ()
 	for (i=0; i<5 ; i++)
 	{
 		y[i] = 5*x[i]*x[i]+3*x[i]+2;			// evaluate the function
-		printf("y(%f)=%f\r\n", x[i], y[i]);		// print the result
+		printf("y(%.1f)=%.1f\r\n", x[i], y[i]);		// print the result
 	}
 	return 0;
 
