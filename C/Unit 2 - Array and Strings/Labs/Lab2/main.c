@@ -19,8 +19,8 @@ int main ()
 	// looping to evaluate the polynomial expression
 	for (i=0; i<5 ; i++)
 	{
-		y = 5*x[i]*x[i]+3*x[i]+2;			// evaluate the function
-		printf("y(%.2f)=%.2f\r\n",x,y);		// print the result
+		y[i] = 5*x[i]*x[i]+3*x[i]+2;			// evaluate the function
+		printf("y(%.2f)=%.2f\r\n", x, y);		// print the result
 	}
 	return 0;
 
