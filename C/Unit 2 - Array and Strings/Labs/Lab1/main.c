@@ -19,7 +19,7 @@ int main ()
 	{
 		printf ("Enter the degree of student No.%d\r\n",count+1);
 		fflush(stdin) ; fflush(stdout);
-		scanf ("%f", &degrees[count]);
+		scanf ("%.2f", &degrees[count]);
 	}
 
 	for(count = 0 ; count <10 ; count++ )	// looping to print the students degrees
