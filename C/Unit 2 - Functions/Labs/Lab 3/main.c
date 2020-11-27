@@ -28,9 +28,9 @@ int main ()
 	length = sizeof(names)/ sizeof(names[0]);	// calculate the array elements/length
 
 	if(findName(names, length, name)==1)		// check if user name is on the list
-		printf ("Welcome to Embedded System Mr. %s", name);
+		printf ("\r\nWelcome to Embedded System Mr. %s", name);
 	else
-		printf ("Your name is not on the list Mr. %s, check it again", name);
+		printf ("\r\nYour name is not on the list Mr. %s, check it again", name);
 
 	return 0;
 }
