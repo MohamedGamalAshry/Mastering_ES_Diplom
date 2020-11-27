@@ -21,6 +21,7 @@ int main ()
 
 	// Reading an integer from user and store it
 	printf ("Enter an Integer number: ");
+	fflush (stdin); fflush(stdout);
 	scanf ("%d", &number) ;
 
 	result = factorial (number) ;		// calculate the factorial
