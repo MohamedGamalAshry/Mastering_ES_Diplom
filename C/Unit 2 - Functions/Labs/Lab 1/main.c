@@ -11,9 +11,37 @@
 
 #include <stdio.h>
 
+// Declaration of Functions:
+int factorial (int x) ;
+
 int main ()
 {
+	int number ;		// declaration of number to calculate its factorial
+	int result ;		// declare a variable to store the factorial result in
+
+	// Reading an integer from user and store it
+	printf ("Enter an Integer number: ");
+	scanf ("%d", &number) ;
+
+	result = factorial (number) ;		// calculate the factorial
+
+	printf ("\r\nThe factorial of (%d) is: %d", number, result) ;	// printing the result
 
 	return 0;
 }
 
+// Function Definition:
+
+int factorial (int x)
+{
+	int fact =1 ;
+	if (x==0 || x==1)
+		return 1;
+	else
+		for (int i = x; i>1 ; i--)
+		{
+			fact *= i;
+		}
+
+	return fact ;
+}
