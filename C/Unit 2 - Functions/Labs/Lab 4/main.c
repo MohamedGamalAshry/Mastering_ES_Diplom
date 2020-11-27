@@ -28,7 +28,7 @@ int main ()
 	fflush(stdin);		fflush(stdout);
 	scanf ("%d", &final_number);
 
-	printf ("\r\nThe Pattern:\r\n ");
+	printf ("\r\nThe Pattern:\r\n");
 	createPattern (final_number);
 
 	return 0;
