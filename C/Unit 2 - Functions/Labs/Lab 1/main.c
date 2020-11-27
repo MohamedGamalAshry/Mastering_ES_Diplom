@@ -39,9 +39,9 @@ int factorial (int x)
 	if (x==0 || x==1)
 		return 1;
 	else
-		for (int i = x; i>1 ; i--)
+		for (; x>1 ; x--)
 		{
-			fact *= i;
+			fact *= x;
 		}
 
 	return fact ;
