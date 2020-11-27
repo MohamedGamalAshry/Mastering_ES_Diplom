@@ -24,7 +24,7 @@ int main ()
 
 	for (i=0 ; i<10 ; i++)
 	{
-		scanf ("%d", values[i]);
+		scanf ("%d", &values[i]);
 	}
 
 	printf ("\r\n The minimum number in the entered array is: %d", calcMin(values, 10));
