@@ -26,12 +26,9 @@ int main ()
 	length = sizeof(names)/ sizeof(names[0]);
 
 	if(findName(names, length, name)==1)
-		{
-			printf ("Welcome to Embedded System");
-			break ;
-		}
+		printf ("Welcome to Embedded System Mr. %s", name);
 	else
-		printf ("Your name is not on the list, check it again");
+		printf ("Your name is not on the list Mr. %s, check it again", name);
 
 	return 0;
 }
@@ -45,8 +42,8 @@ int findName(char names[][10], int length, char name[])
 
 	for (i=0 ; i<length ; i++)
 	{
-		printf("%s\r\n", names[i]);
-		printf("%s\r\n", name);
+		//printf("%s\r\n", names[i]);	//for debugging
+		//printf("%s\r\n", name);		//for debugging
 
 		if (*names[i]==*name)
 			found = 1;
