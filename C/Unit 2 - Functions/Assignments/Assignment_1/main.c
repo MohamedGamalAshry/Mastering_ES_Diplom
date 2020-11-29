@@ -18,7 +18,7 @@ int main ()
 {
 	int begin, end ;		// declare variables for the range limit
 
-	printf ("Enter two numbers (intervals): ");		// ask user to enter the rang limit
+	printf ("Enter two numbers (intervals): \r\n");		// ask user to enter the rang limit
 	fflush(stdin);		fflush(stdout);
 	scanf ("%d %d", &begin, &end);					// scan and store the range limit from user
 
@@ -40,14 +40,14 @@ int primeFinder (int begin, int end)
 	// check if the range is between 0 and 1
 	if (begin<=1 && end==1)
 	{
-		printf ("There is no prime numbers between %d and %d", begin, end);
+		printf ("\r\nThere is no prime numbers between %d and %d", begin, end);
 		return 0 ;
 	}
 
 	// check if the range is between 0 or 1 and 2
 	else if (begin<=1 && end==2)
 	{
-		printf ("The prime numbers between %d and %d are: %d", begin, end, end);
+		printf ("\r\nThe prime numbers between %d and %d are: %d", begin, end, end);
 		return 0 ;
 	}
 
@@ -85,7 +85,7 @@ int primeFinder (int begin, int end)
 
 	// After checking the whole range, print the array of prime number between the range
 
-	printf ("The prime numbers between %d and %d are: ", begin, end);
+	printf ("\r\nThe prime numbers between %d and %d are: \r\n", begin, end);
 
 	for (k=0 ; k<j ; k++)
 	{
