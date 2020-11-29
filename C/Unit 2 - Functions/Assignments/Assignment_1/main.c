@@ -21,7 +21,19 @@ int main ()
 	fflush(stdin);		fflush(stdout);
 	scanf ("%d %d", &begin, &end);
 
-	primeFinder (begin, end);
+	if (begin<=1 && end==1)
+	{
+		printf ("There is no prime numbers between %d and %d", begin, end);
+		return 0 ;
+	}
+
+	else if (begin<=1 && end==2)
+	{
+		printf ("The prime numbers between %d and %d are: %d", begin, end, end);
+		return 0 ;
+	}
+	else
+		primeFinder (begin, end);
 
 	return 0;
 }
@@ -33,43 +45,36 @@ int main ()
 
 int primeFinder (int begin, int end)
 {
-	int i,j,k;
+	int i, j=0, k=0, flag=0;
 	int array [100];
 
-	if (begin<=1 && end<=1)
+	for (i=begin; i<=end ; ++i)	{
+
+		for ( k=2 ; k<=(i/2) ; k++ )
 		{
-		printf ("There is no prime numbers between %d and %d", begin, end);
-		return 0 ;
-		}
-
-	/* ----------------------------------------------------------- */
-
-	else if (begin<=1 && end>=2)
-	{
-		printf ("The prime numbers between %d and %d are: %d", begin, end, end);
-		return 0 ;
-	}
-
-	/* ----------------------------------------------------------- */
-
-	else
-	{
-		for (i=begin; i<=end ; ++i)
-		{
-			if (i%2!=0 && i%3!=0 && i%5!=0 && i%7!=0 && i%11!=0)
-				{
-					array [j] = i ;
-					++j ;
-				}
-		}
-
-		printf ("The prime numbers between %d and %d are: ", begin, end);
-
-		for (k=0 ; k<j ; k++)
+			if (i%k==0)
 			{
-				printf("%d ", array[k]);
+				flag =1 ;
+				++j ;
+				break ;
+				//printf ("%d\r\n",begin);
+				//break ;
 			}
+		}
+
+		 if (flag == 0)
+			 printf ("%d\r\n",i);
 	}
+
+	/* -----------------------------------------------------------*/
+
+	printf ("The prime numbers between %d and %d are: ", begin, end);
+
+	for (k=0 ; k<j ; k++)
+	{
+		printf("%d ", array[k]);
+	}
+	/* ----------------------------------------------------------- */
 
 	return 0;
 }
