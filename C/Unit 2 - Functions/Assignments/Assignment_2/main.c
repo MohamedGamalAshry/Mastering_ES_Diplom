@@ -18,18 +18,18 @@ int calcFactorial (int number);
 
 int main ()
 {
-	int number, result ;
-
+	int number, result ;		// declaring required variables
+	// ask user to enter a specific number
 	printf ("Enter an integer number to calculate its factorial: \r\n");
 	fflush(stdin);		fflush(stdout);
 	scanf ("%d", &number);
 
-	result = calcFactorial(number) ;
+	result = calcFactorial(number) ;		// call the function to calculate the factorial
 
-	printf ("\r\nThe factorial of %d is: %d.", number, result);
+	printf ("\r\nThe factorial of %d is: %d.", number, result);		// print the factorial
 
 	return 0;
-}
+}		// end of main
 
 
 /* ----------------------------------------------------------- */
@@ -39,11 +39,11 @@ int main ()
 int calcFactorial (int number)
 {
 	if (number == 1)
-		return 1 ;
+		return 1 ;		// in case of factorial of 1
 	else
-		return number * calcFactorial (number-1);
+		return number * calcFactorial (number-1);		// add a recursion function
 
-}
+}		// end of function
 
 
 
