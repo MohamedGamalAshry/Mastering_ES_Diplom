@@ -13,9 +13,9 @@
 
 // Declaring Functions(Functions Prototypes):
 
-void inp_array (int arr[],int size);						// Function to input the array elements
-void reverse_array (int arr[],int size); 					// Function to reverse the elements of the array
-void print_array (int arr[],int size); 						// Function to print the array elements
+void inp_array (int arr[],int size);							// Function to input the array elements
+void reverse_array (int arr[],int size); 						// Function to reverse the elements of the array
+void print_array (int arr[],int size); 							// Function to print the array elements
 
 // Main Function
 
@@ -24,7 +24,7 @@ int main()
 	int arr[10];						// Declaring an array of 10 elements
 	int size;							// Declaring a variable to store the size of array
 
-	printf ("Enter the size of array: ");					// Ask user to enter the size of array and store it
+	printf ("Enter the size of array: ");						// Ask user to enter the size of array and store it
 	fflush (stdin);		fflush (stdout);
 	scanf ("%d", &size);
 
@@ -32,12 +32,12 @@ int main()
 	fflush (stdin);		fflush (stdout);
 	inp_array (arr, size);
 
-	printf ("\r\nThe array elements before reverse are:");	// Print the elements of the array
+	printf ("\r\nThe array elements before reverse are:");		// Print the elements of the array
 	print_array (arr, size);
 
-	reverse_array(arr, size);								// Reverse the elements of the array
+	reverse_array(arr, size);									// Reverse the elements of the array
 
-	printf("\r\nThe array elements after reverse:");		// Print the reversed elements of the array
+	printf("\r\nThe array elements after reverse:");			// Print the reversed elements of the array
 	print_array (arr, size);
 
 }		// end of main function
