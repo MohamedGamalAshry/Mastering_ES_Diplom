@@ -48,7 +48,7 @@ int reverseMe (int number)
 			++length;
 		}
 
-	for (i=0; i<=length;i++)
+	for (i=0; i<length;i++)
 		{
 			printf ("%d", digits[i]);						// scan and store the entered number
 		}
