@@ -52,15 +52,15 @@ struct S_StudentInformation ReadStudentInformation( )
 	struct S_StudentInformation StudentInfo;
 
 	printf ("Enter the student information: \n");
-	printf ("\tEnter the student name: ");
+	printf ("Enter the student name: ");
 	fflush (stdin); fflush(stdout);
 	scanf ("%[^\n]%*c", &StudentInfo.name );
 
-	printf ("\n\tEnter the student's roll number: ");
+	printf ("\nEnter the student's roll number: ");
 	fflush (stdin); fflush(stdout);
 	scanf ("%d", &StudentInfo.RollNumber );
 
-	printf ("\n\tEnter the students marks: ");
+	printf ("\nEnter the students marks: ");
 	fflush (stdin); fflush(stdout);
 	scanf ("%f", &StudentInfo.marks);
 
@@ -76,11 +76,11 @@ void printStudentInfo (struct S_StudentInformation StudentInfo)
 	// print the
 	printf ("Displaying the student's Information: \n");
 
-	printf ("\tStudent name: %s", StudentInfo.name );
+	printf ("Student name: %s", StudentInfo.name );
 
-	printf ("\n\tStudent's roll number: %d", StudentInfo.RollNumber);
+	printf ("\nStudent's roll number: %d", StudentInfo.RollNumber);
 
-	printf ("\n\tStudent's marks: %f", StudentInfo.marks);
+	printf ("\nStudent's marks: %f", StudentInfo.marks);
 
 }
 
