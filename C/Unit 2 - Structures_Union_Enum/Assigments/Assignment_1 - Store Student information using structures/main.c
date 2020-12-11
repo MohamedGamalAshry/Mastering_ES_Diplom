@@ -74,13 +74,13 @@ struct S_StudentInformation ReadStudentInformation( )
 void printStudentInfo (struct S_StudentInformation StudentInfo)
 {
 	// print the
-	printf ("Displaying the student's Information: \n");
+	printf ("\nDisplaying the student's Information: \n");
 
 	printf ("Student name: %s", StudentInfo.name );
 
 	printf ("\nStudent's roll number: %d", StudentInfo.RollNumber);
 
-	printf ("\nStudent's marks: %f", StudentInfo.marks);
+	printf ("\nStudent's marks: %.2f", StudentInfo.marks);
 
 }
 
