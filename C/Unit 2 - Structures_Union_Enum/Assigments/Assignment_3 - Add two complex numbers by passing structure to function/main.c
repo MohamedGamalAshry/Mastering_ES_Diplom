@@ -73,6 +73,7 @@ struct SComplex ReadComplex ()
 struct SComplex AddComplex (struct SComplex First_Number, struct SComplex Second_Number)
 {
 	struct SComplex ComplexNumber;
+
 	// Perform addition for real parts and imaginary parts together
 	ComplexNumber.m_R = First_Number.m_R + Second_Number.m_R ;
 	ComplexNumber.m_I = First_Number.m_I + Second_Number.m_I ;
