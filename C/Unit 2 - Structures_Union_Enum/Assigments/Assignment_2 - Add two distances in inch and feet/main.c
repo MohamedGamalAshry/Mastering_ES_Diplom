@@ -40,20 +40,24 @@ void printDistance (struct S_distance Result);
 
 int main()
 {
-	struct S_distance First_Distance, Second_Distance, Result ;  	// Declare the required structures
+	// Declare the required structures
+	struct S_distance First_Distance, Second_Distance, Result ;
 
+	// Read the first distance from the user
 	printf ("Enter the 1st distance below in feet and inches: \n" );
-	First_Distance = ReadDistances( ) ;								// Read the first complex number from the user
+	First_Distance = ReadDistances( ) ;
 
+	// Read the 2nd distance number from the user
 	printf ("\nEnter the 2nd distance below in feet and inches: \n" );
-	Second_Distance = ReadDistances( );								// Read the 2nd complex number from the user
+	Second_Distance = ReadDistances( );
 
-	Result = AddDistances (First_Distance, Second_Distance);		// Add both complex numbers together
+	// Add both distances
+	Result = AddDistances (First_Distance, Second_Distance);
 
-	printDistance (Result);						// print the result of addition
+	printDistance (Result);		// print the result of addition
 
 	return 0;
-}
+}   // end of main function
 
 /* --------------------------------------------------------- */
 
@@ -61,44 +65,44 @@ int main()
 
 struct S_distance ReadDistances ( )
 {
-	struct S_distance Distance;
+	struct S_distance Distance;   // declare a structure to be returned with the stored distances
 
-	printf ("\nEnter the distance in feet is: " );
+	printf ("\nEnter the distance in feet is: " );		// Read distance in feet from user
 	fflush (stdin); fflush(stdout);
 	scanf ("%d", &Distance.feet );
 
-	printf ("\nEnter the distance in inches: " );
+	printf ("\nEnter the distance in inches: " );		// Read distance in inch from user
 	fflush (stdin); fflush(stdout);
 	scanf ("%f", &Distance.inch );
 
-	return Distance ;
+	return Distance ;		// return both distances in feet and inch
 }
 
 /* ----------------------------------------------------------- */
 
 struct S_distance AddDistances (struct S_distance First_Distance, struct S_distance Second_Distance)
 {
-	struct S_distance Result;
-	int temp ;
+	struct S_distance Result;		// declare structure to store the addition result
+	int temp ;						// declare a temporary variable
 
-	Result.feet = First_Distance.feet + Second_Distance.feet ;
-	Result.inch = First_Distance.inch + Second_Distance.inch;
+	Result.feet = First_Distance.feet + Second_Distance.feet ;	// add distances in feet
+	Result.inch = First_Distance.inch + Second_Distance.inch;	// add distances in inch
 
-	if (Result.inch >= 12)
+	if (Result.inch >= 12)			// check if inches contain more than one feet
 		{
 			temp = Result.inch;
-			Result.feet += temp/12 ;
-			Result.inch -= ((temp/12)*12.0);
+			Result.feet += temp/12 ;			// add the feet in inches to the feet addition result
+			Result.inch -= ((temp/12)*12.0);	// subtract the feet in inches from the original inches
 		}
 
-	return Result ;		// Return the addition of both numbers
+	return Result ;		// Return the addition of both distances after conversion and addition
 }
 
 /* ----------------------------------------------------------- */
 
 void printDistance (struct S_distance Result)
 {
-	// print the sum of all distances
+	// print the sum of all distances in feet and inches
 	printf ("\nThe SUM of the distances is: %d',%.2f\".", Result.feet, Result.inch);
 }
 
