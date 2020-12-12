@@ -58,12 +58,12 @@ int main()
 
 struct SComplex ReadComplex ()
 {
-	struct SComplex ComplexNumber;
+	struct SComplex ComplexNumber;		// declare a structure to return the scanned number from the user
 
 	printf ("Enter real part and imaginary part of complex number respectively: \n");
 	fflush (stdin); fflush(stdout);
-	scanf ("%lf", &ComplexNumber.m_R);
-	scanf ("%lf", &ComplexNumber.m_I);
+	scanf ("%lf", &ComplexNumber.m_R);	// read the real part of the complex number
+	scanf ("%lf", &ComplexNumber.m_I);  // read the imaginary part of the complex number
 
 	return ComplexNumber ;
 }
@@ -84,7 +84,7 @@ struct SComplex AddComplex (struct SComplex First_Number, struct SComplex Second
 
 void printComplex (char name[], struct SComplex Result)
 {
-	// print the complex number in its mathimatical form
+	// print the complex number in its mathematical form
 	printf ("\r\n%s = %.2lf + %.2lf i \r\n", name, Result.m_R, Result.m_I);
 }
 
