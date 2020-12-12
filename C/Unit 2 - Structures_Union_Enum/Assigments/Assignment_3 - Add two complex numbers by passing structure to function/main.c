@@ -27,7 +27,7 @@ struct SComplex
 // Function declarations (Functions Prototypes)
 
 // Function that reads the complex number from the user
-struct SComplex ReadComplex (char name[]);
+struct SComplex ReadComplex ();
 
 // Function that adds the real and imaginary part of both complex numbers
 struct SComplex AddComplex (struct SComplex First_Number, struct SComplex Second_Number);
@@ -43,8 +43,8 @@ int main()
 {
 	struct SComplex First_Number, Second_Number, Result ;   // Declare the required structures
 
-	First_Number = ReadComplex ("First_Number") ;			// Read the first complex number from the user
-	Second_Number = ReadComplex ("Second_Number");			// Read the 2nd complex number from the user
+	First_Number = ReadComplex () ;							// Read the first complex number from the user
+	Second_Number = ReadComplex ();							// Read the 2nd complex number from the user
 	Result = AddComplex (First_Number, Second_Number);		// Add both complex numbers together
 
 	printComplex ("Result", Result);						// print the result of addition
@@ -56,12 +56,15 @@ int main()
 
 // Functions definitions:
 
-struct SComplex ReadComplex (char name[])
+struct SComplex ReadComplex ()
 {
 	struct SComplex ComplexNumber;
-	printf ("Enter the complex value of %s as (Ex: 5, -3): ", name);
+
+	printf ("Enter real part and imaginary part of complex number respectively: \n");
 	fflush (stdin); fflush(stdout);
-	scanf ("%lf, %lf", &ComplexNumber.m_R, &ComplexNumber.m_I);
+	scanf ("%lf", &ComplexNumber.m_R);
+	scanf ("%lf", &ComplexNumber.m_I);
+
 	return ComplexNumber ;
 }
 
@@ -82,7 +85,7 @@ struct SComplex AddComplex (struct SComplex First_Number, struct SComplex Second
 void printComplex (char name[], struct SComplex Result)
 {
 	// print the complex number in its mathimatical form
-	printf ("\r\n%s = (%lf) + j (%lf) \r\n", name, Result.m_R, Result.m_I);
+	printf ("\r\n%s = %.2lf + %.2lf i \r\n", name, Result.m_R, Result.m_I);
 }
 
 /* ----------------------------------------------------------- */
