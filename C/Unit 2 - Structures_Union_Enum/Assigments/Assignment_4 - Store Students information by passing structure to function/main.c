@@ -38,10 +38,25 @@ int main()
 {
 	struct S_StudentInformation StudentInfo ;   		// Declare the required structure
 	struct S_StudentInformation StudentsData [10] ;		// Declare an array that holds all students information
-	int NumOfStudents = 10 ;							// Declare variable for number of students
+	int NumOfStudents = 10, i ;							// Declare variable for number of students
 
-	StudentInfo = ReadStudentInformation() ;			// Read the student information from the user
-	printStudentInfo (StudentInfo);						// print the student information
+	printf ("Enter the information of 10 Students:\n");
+
+	for ( i=0; i<NumOfStudents; ++i)
+	{
+		printf ("=======================================") ;
+		printf ("\nEnter the information of student No.[%d]:\n", i+1);
+		StudentInfo = ReadStudentInformation() ;			// Read the student information from the user
+		StudentsData [i] = StudentInfo ;
+	}
+
+	printf ("\n#################################################\n") ;
+	printf ("\nDisplaying the information of the students:\n");
+
+	for ( i=0; i<NumOfStudents; ++i)
+	{
+		printStudentInfo (StudentsData [i]);						// print the student information
+	}
 
 	return 0;
 }
@@ -53,8 +68,8 @@ struct S_StudentInformation ReadStudentInformation( )
 {
 	struct S_StudentInformation StudentInfo;
 
-	printf ("Enter the student information: \n");
-	printf ("Enter the student name: ");
+	//printf ("Enter the student information: \n");
+	printf ("\nEnter the student name: ");
 	fflush (stdin); fflush(stdout);
 	scanf ("%[^\n]%*c", &StudentInfo.name );
 
@@ -75,10 +90,9 @@ struct S_StudentInformation ReadStudentInformation( )
 
 void printStudentInfo (struct S_StudentInformation StudentInfo)
 {
-	// print the
-	printf ("\nDisplaying the student's Information: \n");
+	printf ("\n=======================================") ;
 
-	printf ("Student name: %s", StudentInfo.name );
+	printf ("\nStudent name: %s", StudentInfo.name );
 
 	printf ("\nStudent's roll number: %d", StudentInfo.RollNumber);
 
