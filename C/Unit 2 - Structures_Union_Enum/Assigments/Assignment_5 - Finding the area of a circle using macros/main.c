@@ -26,16 +26,17 @@ double areaCirlce (float radius);
 
 int main()
 {
-	float radius ;
+	float radius ;										// declare float variable for the radius
 
-	printf ("Enter the radius of the circle: ");
+	printf ("Enter the radius of the circle: ");		// ask the user to enter the circle radius
 	fflush (stdin);	fflush (stdout);
-	scanf ("%f", &radius);
+	scanf ("%f", &radius);								// scan and store the radius of circle
 
+	// print the area of the circle
 	printf ("The Area of the circle is: %.2lf", areaCirlce (radius));
 
 	return 0;
-}
+}			// end of main
 
 /* --------------------------------------------------------- */
 
@@ -43,5 +44,5 @@ int main()
 
 double areaCirlce (float radius)
 {
-	return (PI*radius*radius);
-}
+	return (PI*radius*radius);		// Return the area of circle
+}		// end of function
